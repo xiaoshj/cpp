@@ -1,0 +1,31 @@
+#include<iostream>
+#include<string>
+using namespace std;
+//赋值操作
+void test01() {
+	string s1;
+	s1 = "hello";
+	cout << s1 << endl;
+	string s2;
+	s2 = s1;
+	cout << s2 << endl;
+	string s3;
+	s3 = 'a';//单个字符赋值给字符串
+	cout << "s3:" << s3 << endl;
+	string s4;
+	s4.assign("hello c++");
+	string s5;
+	s5.assign("hello c++", 6);//拿前六个字符
+	string s6;
+	s6.assign(s5);
+	cout << "s6:" << s6 << endl;
+	string s7;
+	s7.assign(5, 'af');//最大字符输出5次，引号内字符不得超过5
+	cout << "s7:" << s7 << endl;
+}
+int main()
+{
+	test01();
+	while (1);
+	return 0;
+}
